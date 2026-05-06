@@ -1,2 +1,0 @@
-# UZAK
-We are Writer

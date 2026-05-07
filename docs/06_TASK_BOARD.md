@@ -1,8 +1,4 @@
 ## TODO
-- DEPLOY-002 README 작성
-- DEPLOY-003 GitHub 업로드
-- DEPLOY-004 MongoDB Atlas 연결
-- DEPLOY-005 Backend 배포
 - DEPLOY-006 Frontend 배포
 
 ## DOING
@@ -42,3 +38,7 @@
 - UI-007 공통 로딩/에러 컴포넌트
 - UI-008 반응형 모바일 대응
 - DEPLOY-001 환경변수 정리
+- DEPLOY-002 README 작성
+- DEPLOY-003 GitHub 업로드
+- DEPLOY-004 MongoDB Atlas 연결
+- DEPLOY-005 Backend 배포

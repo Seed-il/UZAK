@@ -5,3 +5,4 @@ node_modules/
 dist/
 build/
 !.env.example
+테스트순서.txt

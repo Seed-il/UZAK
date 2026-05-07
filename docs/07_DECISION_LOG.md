@@ -594,3 +594,49 @@
 - 작성 폼 input/textarea 폭 정상 확인
 - 데스크탑 레이아웃 유지 확인
 - npm run build 성공
+
+# DEPLOY-002 GitHub 업로드 준비
+
+## 결정 내용
+- README.md를 보완했다.
+- backend/frontend 실행 방법을 정리했다.
+- 환경변수 설정 방법을 정리했다.
+- .gitignore를 통해 .env, node_modules, dist 등을 업로드 제외 대상으로 유지했다.
+- GitHub 업로드 명령 예시를 정리했다.
+
+## 변경 파일
+- README.md
+
+## 검증 결과
+- frontend npm run build 성공
+- GitHub 업로드 성공
+- .env 및 node_modules 업로드 제외 확인
+
+# DEPLOY-003 MongoDB Atlas 연결
+
+## 결정 내용
+- MongoDB Atlas 무료 클러스터를 생성했다.
+- backend의 MONGO_URI를 Atlas URI로 변경했다.
+- Mongoose 연결 구조가 Atlas에서도 정상 동작함을 확인했다.
+- README.md에 Atlas 설정 방법을 정리했다.
+
+## 검증 결과
+- MongoDB connected successfully 로그 확인
+- Atlas 연결 성공 확인
+- backend 서버 정상 실행 확인
+
+# DEPLOY-004 Backend Render 배포
+
+## 결정 내용
+- Render Web Service로 백엔드를 배포했다.
+- Root Directory는 src/backend로 설정했다.
+- Build Command는 npm install을 사용했다.
+- Start Command는 npm start를 사용했다.
+- MongoDB Atlas URI를 MONGO_URI 환경변수로 설정했다.
+- JWT_SECRET을 Render 환경변수로 설정했다.
+- Atlas Network Access에서 Render 접속을 허용했다.
+
+## 검증 결과
+- MongoDB connected successfully 로그 확인
+- UZAK backend server is running on port 10000 로그 확인
+- 배포 URL에서 GET / 응답 확인
